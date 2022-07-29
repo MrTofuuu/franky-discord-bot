@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "npx tsc --project tsconfig.json",
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,8 +19,12 @@
   },
   "homepage": "https://github.com/MrTofuuu/franky-discord-bot#readme",
   "dependencies": {
+    "@discordjs/rest": "^1.0.1",
     "axios": "^0.27.2",
     "discord.js": "^14.0.3",
     "dotenv": "^16.0.1"
+  },
+  "devDependencies": {
+    "typescript": "^4.7.4"
   }
 }
